@@ -1,0 +1,50 @@
+TEAMIE ASSIGNMENT
+
+Framework used - Angular 7, Material Design.
+
+
+
+Requirements:
+
+1- UI-> Design UI through Angular Material.
+
+2- Filter-> Added Date filter and used Saturn date picker to filter date and popup is also appearing while click on date range filter.
+
+3- Sort-> Sorting functionality added in columns(User, Friends, Influence, Chirpiness).
+
+4- Remove-> Made a column for deleting the particular row.
+
+5- CSS Framework -> Used Angular Material design for css.
+
+Bonus:
+
+Added Bar graph that connects with table and alter when row is deleted.
+
+
+
+Components, Services, API Data file made:
+
+data.json->
+This JSON file save the MOCK API data and loading in componets using HTTP Client in Angular as mentioned in assignment.
+
+
+COMPONENTS made for breaking the application into smaller parts.
+
+Component 1 -> rubric component:
+
+This component consists of:
+
+1. DataTable - This consists of data which is coming from MOCK API.
+2. Delete button- This functionality removes particular row and returns the remaining rows.
+3. refresh button- This functionality can be used if user wants to get full data after deleting some rows.
+4. Date range filter- This functionality is used to filterData in data table according to the dateSelected.
+
+Component 2-> highchart component.
+
+This component consists of barGraph which shows username with the values of total,friends,chirpiness, influence on a scale of 0-10 and this graph can be
+altered by deleting the rows and after refreshing the page.
+
+Service:
+mainService ->  
+This service is used to connect the above 2 components as when a user deletes a row or refresh the page the graph data changes and also used 
+localStorage for data transfering.
